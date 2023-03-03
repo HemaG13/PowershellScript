@@ -15,5 +15,16 @@ $subnetConfig = Add-AzVirtualNetworkSubnetConfig `
 $virtualNetwork2 | Set-AzVirtualNetwork
 
 
+
+$subnetConfig 
+# Get virtual network peering named myVnet1TomyVnet2 located in myVirtualNetwork in the resource group named myResourceGroup.
+
+Get-AzVirtualNetworkPeering 
+-Name "myVnet1TomyVnet2" 
+-VirtualNetworkName "myVnet" 
+-ResourceGroupName "myResourceGroup"
+
 # Delete a virtual network
-Remove-AzVirtualNetwork -Name myVirtualNetwork2 -ResourceGroupName myResourceGroup 
+Remove-AzVirtualNetwork 
+-Name myVirtualNetwork2 
+-ResourceGroupName myResourceGroup 
