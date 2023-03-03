@@ -13,3 +13,7 @@ $subnetConfig = Add-AzVirtualNetworkSubnetConfig `
 
 # Write the subnet configuration to the virtual network.
 $virtualNetwork2 | Set-AzVirtualNetwork
+
+
+# Delete a virtual network
+Remove-AzVirtualNetwork -Name myVirtualNetwork2 -ResourceGroupName myResourceGroup 

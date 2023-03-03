@@ -1,3 +1,4 @@
+
 New-AzVm `
   -ResourceGroupName "myResourceGroup" `
   -Location "East US" `
@@ -5,3 +6,4 @@ New-AzVm `
   -SubnetName "Subnet1" `
   -ImageName "Win2016Datacenter" `
   -Name "myVm2"
+
